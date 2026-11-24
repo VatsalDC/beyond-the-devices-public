@@ -1,0 +1,54 @@
+name: "💡 Feature request"
+description: "Suggest something that would make Beyond the Devices better."
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the idea. We read every request; the best ones describe
+        the problem first and the solution second.
+  - type: input
+    id: summary
+    attributes:
+      label: "One-line summary"
+      description: "What would you like Beyond the Devices to do?"
+      placeholder: "e.g. Mirror the phone's battery into the macOS menu bar"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Where would this live?"
+      multiple: true
+      options:
+        - "macOS app"
+        - "Android app"
+        - "Website / docs"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem does it solve?"
+      description: "A concrete situation where today's app falls short. Context beats description."
+      placeholder: "e.g. I often notice my phone battery is low only after I pick it up; a glance at the menu bar would tell me earlier."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "How should it work?"
+      description: "Your ideal flow. Screens, buttons, timings — rough is fine."
+      placeholder: "e.g. A small battery ring next to the Beyond the Devices menu bar icon, tinted by charge level, tap to open the hub."
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives you considered"
+      description: "Other ways to solve the same problem, and why you prefer yours."
+  - type: textarea
+    id: context
+    attributes:
+      label: "Anything else?"
+      description: "Similar apps that do this well, edge cases we should think about, or notes on privacy impact."

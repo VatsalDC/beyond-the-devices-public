@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 Questions and feedback"
+    url: https://github.com/VatsalDC/beyond-the-devices-public/discussions
+    about: Ask questions or share general feedback in Discussions.
+  - name: "🔒 Report a security vulnerability"
+    url: https://github.com/VatsalDC/beyond-the-devices-public/security
+    about: Read the disclosure policy in SECURITY.md first. Sensitive details go to support@beyondthedevices.com.
+  - name: "📖 Support and troubleshooting"
+    url: https://beyondthedevices.com/support
+    about: Pairing help, requirements and common questions on the website.
