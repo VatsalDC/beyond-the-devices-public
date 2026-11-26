@@ -7,6 +7,43 @@ alongside it and keeps its own Play Store version codes.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2026-11-27
+
+macOS artifact: `BeyondTheDevices-1.3.1.dmg`
+SHA-256: `ab941bca3538bdf23035b040222adf759a686a099356a309218671a6a4f4cd8f`
+
+### Fixed
+
+- **Keychain pre-prompt** — the "One-Time Security Setup" screen now appears
+  only when the app actually has no stored identity. A normal update reuses the
+  existing key, so the app no longer announces a macOS password prompt that
+  never comes.
+- **File browsing cancellation** — changing folders no longer aborts an
+  in-flight download, video stream or pending file operation. Only a lost
+  session or a device switch tears those down.
+- **Notification read state** — a re-post of the same alert keeps its read
+  state, changed content becomes unread, and the unread badge clears when the
+  notifications inspector is opened.
+- **Media stream cleanup** — the local video stream server stops when its helper
+  process exits instead of streaming into nothing.
+- **Device switching** — in-flight downloads, ranges and file operations fail
+  cleanly when the paired phone changes.
+
+### Changed
+
+- **Bounded history** — the message archive keeps the newest 1,000 messages
+  across all conversations, and in-memory chats follow the same limit, so a
+  long-running app no longer grows without bound.
+- **Local media server** — the stream server binds to loopback only and validates
+  content types before serving a file.
+
+### Removed
+
+- Unused notification/media feature indicators in the Mac rail that could never
+  reflect real state.
+
+[1.3.1]: https://github.com/VatsalDC/beyond-the-devices-public/releases/tag/v1.3.1
+
 ## [1.3.0] - 2026-11-22
 
 macOS artifact: `BeyondTheDevices-1.3.0.dmg`

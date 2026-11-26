@@ -19,7 +19,7 @@ telemetry.
 
 ## Download
 
-- **macOS app (v1.3.0):** <https://beyondthedevices.com/download> or the
+- **macOS app (v1.3.1):** <https://beyondthedevices.com/download> or the
   [latest GitHub release](https://github.com/VatsalDC/beyond-the-devices-public/releases/latest).
 - **Android app:** Google Play (`com.beyondthedevices.app`). The app is in
   closed testing until production access is granted; the download page shows
@@ -33,25 +33,25 @@ file you received is the file we published.
 macOS (built-in):
 
 ```sh
-shasum -a 256 ~/Downloads/BeyondTheDevices-1.3.0.dmg
+shasum -a 256 ~/Downloads/BeyondTheDevices-1.3.1.dmg
 ```
 
 Linux:
 
 ```sh
-sha256sum ~/Downloads/BeyondTheDevices-1.3.0.dmg
+sha256sum ~/Downloads/BeyondTheDevices-1.3.1.dmg
 ```
 
 Windows (PowerShell):
 
 ```powershell
-Get-FileHash .\Downloads\BeyondTheDevices-1.3.0.dmg -Algorithm SHA256
+Get-FileHash .\Downloads\BeyondTheDevices-1.3.1.dmg -Algorithm SHA256
 ```
 
-The expected value for v1.3.0 is:
+The expected value for v1.3.1 is:
 
 ```
-f93213ddbc778c7a809498f51009b5276ee143b6796a373b22fdc3b67eedd7d1
+ab941bca3538bdf23035b040222adf759a686a099356a309218671a6a4f4cd8f
 ```
 
 The same value is listed on the [download page](https://beyondthedevices.com/download)

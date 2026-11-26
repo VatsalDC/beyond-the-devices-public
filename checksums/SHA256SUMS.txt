@@ -1,0 +1,16 @@
+# SHA-256 checksums
+
+One line per published macOS disk image, newest first. The same digests appear
+on the [download page](https://beyondthedevices.com/download) and on each GitHub
+release.
+
+Verify a download:
+
+```sh
+shasum -a 256 ~/Downloads/BeyondTheDevices-1.3.1.dmg
+```
+
+```
+ab941bca3538bdf23035b040222adf759a686a099356a309218671a6a4f4cd8f  BeyondTheDevices-1.3.1.dmg
+f93213ddbc778c7a809498f51009b5276ee143b6796a373b22fdc3b67eedd7d1  BeyondTheDevices-1.3.0.dmg
+```
